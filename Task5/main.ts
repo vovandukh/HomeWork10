@@ -21,14 +21,6 @@ btnReset.addEventListener('click', () => {
     document.querySelector('.badWords').innerHTML = '';
     arr = [];
 });
-function createStar(elem): void {
-    let starCount;
-    for (let i = 0; i < elem.lenght; i++) {
-        starCount += '*'
-    }
-    return starCount
-    console.log(starCount);
-}
 
 cenzor.addEventListener('click', () => {
     let value: string = (<HTMLInputElement>textarea).value;
