@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <h1>List of prohibited words:</h1>
+    </header>
+    <section>
+        <div class="wrapper">
+            <div class="wordsWrapper" style="display: flex;">
+                <h3>Bad words:</h3><h3 class="badWords" style="color: red; margin: 0 0 0 10px;"></h3>
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control inputWords" placeholder="word here ..." aria-label="Server">
+                <button type="button" class="btn btn-warning btnAdd" style="width: 80px;">Add</button>
+                <button type="button" class="btn btn-danger btnReset" style="width: 80px;">Reset</button>
+            </div>
+            <div class="form-floating">
+                <textarea class="form-control inputTextarea" placeholder="Leave a comment here" id="floatingTextarea2"
+                    style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Text here...</label>
+            </div>
+            <button type="button" class="btn btn-success cenzor" style="width: 100%; margin: 20px 0 0 0;">Cenzor</button>
+        </div>
+    </section>
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
